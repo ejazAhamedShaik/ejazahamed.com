@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { hero, siteConfig } from '@/lib/data'
+import { useLetsTalk } from '@/components/features/lets-talk'
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const
 
@@ -18,6 +19,8 @@ function AnimItem({ children, delay = 0 }: { children: React.ReactNode; delay?: 
 }
 
 export function Hero() {
+  const { open: openLetsTalk } = useLetsTalk()
+
   return (
     <section
       className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 pt-24 pb-16 max-w-6xl mx-auto"
@@ -55,15 +58,15 @@ export function Hero() {
 
         <AnimItem delay={0.55}>
           <div className="flex flex-wrap items-center gap-3 mb-14">
-            <a
-              href="#contact"
+            <button
+              onClick={openLetsTalk}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-violet text-ink text-sm font-medium hover:bg-violet-light transition-colors duration-200"
             >
-              Get in touch
+              Let&apos;s talk
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
                 <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </a>
+            </button>
             <a
               href="#experience"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-edge text-ink-dim text-sm font-medium hover:text-ink hover:border-edge transition-colors duration-200"

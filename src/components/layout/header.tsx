@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { siteConfig } from '@/lib/data'
+import { useLetsTalk } from '@/components/features/lets-talk'
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -13,6 +14,7 @@ const navLinks = [
 ]
 
 export function Header() {
+  const { open: openLetsTalk } = useLetsTalk()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
@@ -91,12 +93,12 @@ export function Header() {
             ))}
           </ul>
 
-          <a
-            href={`mailto:${siteConfig.email}`}
+          <button
+            onClick={openLetsTalk}
             className="hidden md:inline-flex items-center gap-2 text-sm px-4 py-1.5 rounded-full border border-edge text-ink-dim hover:text-ink hover:border-violet/40 transition-all duration-200"
           >
             Let&apos;s talk
-          </a>
+          </button>
 
           {/* Mobile hamburger */}
           <button
@@ -152,13 +154,12 @@ export function Header() {
               ))}
             </ul>
             <div className="mt-auto">
-              <a
-                href={`mailto:${siteConfig.email}`}
-                onClick={() => setMenuOpen(false)}
+              <button
+                onClick={() => { setMenuOpen(false); openLetsTalk() }}
                 className="inline-flex items-center justify-center w-full py-3 rounded-full border border-violet/30 text-violet-light font-medium mt-8 hover:bg-violet-dim transition-colors"
               >
                 Let&apos;s talk
-              </a>
+              </button>
             </div>
           </motion.div>
         )}

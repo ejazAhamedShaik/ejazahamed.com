@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/lib/data'
+import { LetsTalkProvider, LetsTalkModal } from '@/components/features/lets-talk'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -76,7 +77,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="noise-bg min-h-screen flex flex-col bg-void text-ink">
-        {children}
+        <LetsTalkProvider>
+          {children}
+          <LetsTalkModal />
+        </LetsTalkProvider>
       </body>
     </html>
   )
