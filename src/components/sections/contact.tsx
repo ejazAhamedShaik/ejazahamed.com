@@ -31,7 +31,7 @@ export function Contact() {
       <SectionHeading
         label="Contact"
         title="Let's work together."
-        description="Open to fully remote roles globally — US, Europe, Canada, Australia, Middle East, and senior roles in India. I respond to every message."
+        description="Open to fully remote roles worldwide and on-site opportunities in Europe, UK, Middle East, Singapore, Australia, New Zealand, and India. I respond to every message."
       />
 
       <div className="grid md:grid-cols-3 gap-4 max-w-3xl">

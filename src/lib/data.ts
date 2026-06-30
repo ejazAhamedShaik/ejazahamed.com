@@ -3,13 +3,13 @@ export const siteConfig = {
   shortName: 'Ejaz Ahamed',
   title: 'Ejaz Ahamed — Full Stack Engineer',
   description:
-    'Full Stack Engineer with 4.7+ years of enterprise experience building scalable web products with React, Next.js, TypeScript, and Node.js.',
+    'Full Stack Engineer with 4.7+ years of enterprise experience building scalable web products with React, Next.js, TypeScript, Node.js, and MongoDB.',
   url: 'https://ejaz-ahamed.dev',
   email: 'shaik.ejaz.dev@gmail.com',
   location: 'Bengaluru, India',
   linkedin: 'https://linkedin.com/in/ejaz-ahamed-shaik',
   github: 'https://github.com/ejazAhamedShaik',
-  availability: 'Open to remote · US · Europe · Canada · Australia · Middle East · India',
+  availability: 'Remote worldwide · On-site: Europe · UK · Middle East · Singapore · Australia · New Zealand · India',
 }
 
 export const hero = {
@@ -17,7 +17,7 @@ export const hero = {
   name: 'Ejaz Ahamed',
   headline: 'I build scalable web products and ship faster with AI-augmented workflows.',
   subheadline:
-    '4.7+ years of enterprise experience across React, Next.js, TypeScript, and Node.js.',
+    '4.7+ years of enterprise experience across React, Next.js, TypeScript, Node.js, and MongoDB.',
 }
 
 export const about = {
@@ -55,10 +55,10 @@ export const experience: ExperienceItem[] = [
     location: 'Bengaluru, India (Remote-capable)',
     tech: ['React', 'TypeScript', 'Redux', 'Ant Design', 'Jest', 'React Testing Library', 'Claude Code', 'Codex', 'Node.js'],
     highlights: [
-      'Cut design-to-development time by ~35–45% by integrating Claude Code, Codex, and the Figma MCP server into the component pipeline — enabling faster Figma-to-React conversion at enterprise quality.',
-      'Boosted frontend team productivity by ~30% and reduced legacy UI duplication by ~40% by defining reusable architectural patterns and refactoring monolithic interfaces into modular, testable React/TypeScript modules.',
-      'Led end-to-end delivery of two enterprise modules (EWS and Innovation Portal), owning planning, role/region-based access, test baselines, code reviews, and mentoring 3 developers.',
-      'Improved performance across complex enterprise flows through memoization, lazy loading, code splitting, and Redux state optimization — enhancing UX for multi-region users.',
+      'Reduced design-to-development time by ~35–45% by integrating Claude Code and Codex into the component generation pipeline and configuring the Figma MCP server in VS Code, enabling faster Figma-to-React conversion while maintaining enterprise code quality standards.',
+      'Improved frontend team productivity by ~30% and cut legacy UI duplication by ~40% by defining reusable architectural patterns — masonry layouts, dynamic selects, configurable components — and refactoring monolithic interfaces into modular, testable React/TypeScript modules, enabling faster parallel development across 3+ engineers.',
+      'Led end-to-end delivery of two key enterprise modules (EWS and Innovation Portal) by owning planning, role/region-based access control, Jest/RTL test baselines, code reviews, and mentoring 3 developers — improving release stability and QA pass rates across multi-region users.',
+      'Improved performance across complex enterprise flows by implementing memoization, lazy loading, code splitting, Redux state optimization, and component-level rendering improvements, enhancing UX for multi-region, role-based users.',
     ],
   },
   {
@@ -67,12 +67,11 @@ export const experience: ExperienceItem[] = [
     period: 'Nov 2021 – Jun 2024',
     current: false,
     location: 'Bengaluru, India',
-    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Zustand', 'Azure CI/CD', 'Storybook', 'WebSockets'],
+    tech: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'Context API', 'Zustand', 'Azure CI/CD', 'Storybook'],
     highlights: [
-      'Increased user satisfaction by ~25% by translating Figma designs into pixel-perfect, accessible React/Next.js interfaces — reducing UI bug reports and tightening design-development alignment.',
-      'Improved development efficiency by ~40% and reduced UI defects by building a reusable component library with Storybook docs and custom React hooks, adopted across multiple teams.',
-      'Eliminated frontend delivery blockers by developing lightweight Node.js/Express mock APIs and implementing real-time WebSocket notifications, enabling on-time Azure CI/CD deployments.',
-      'Recognized with the Rookie of the Unit award and Outstanding Performance rating for early impact and project delivery excellence.',
+      'Increased user satisfaction by ~25% by translating Figma designs into pixel-perfect, accessible React.js and Next.js interfaces using TypeScript and Tailwind CSS, reducing UI-related bug reports and improving design-development alignment.',
+      'Improved development efficiency by ~40% and reduced UI defects by building a reusable component library with Storybook documentation and custom React hooks, establishing a consistent frontend standard adopted across multiple project teams.',
+      'Eliminated frontend delivery blockers by developing lightweight Node.js/Express.js mock APIs for parallel frontend development and implementing real-time notifications via WebSockets, supporting on-time Azure CI/CD deployments across Dev and UAT environments.',
     ],
   },
 ]
@@ -85,23 +84,23 @@ export type SkillCategory = {
 export const skills: SkillCategory[] = [
   {
     name: 'Frontend',
-    skills: ['React.js', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Redux', 'Zustand', 'Context API', 'WebSockets', 'HTML5', 'CSS3'],
+    skills: ['React.js', 'Next.js (SSR/SSG)', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Ant Design', 'Redux', 'Zustand', 'Context API', 'WebSockets', 'Storybook', 'HTML5', 'CSS3'],
   },
   {
     name: 'Backend',
-    skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'JWT', 'MongoDB', 'MySQL', 'PostgreSQL'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL (basic)', 'JWT', 'MongoDB (working)', 'MySQL (working)', 'PostgreSQL (basic familiarity)'],
   },
   {
     name: 'Testing & Quality',
-    skills: ['Jest', 'React Testing Library', 'Storybook', 'Unit Testing', 'Integration Testing'],
+    skills: ['Jest', 'React Testing Library', 'Unit Testing', 'Integration Testing', 'Component-level Test Baselines'],
   },
   {
     name: 'AI Dev Tooling',
-    skills: ['Claude Code', 'Codex', 'Figma MCP Server', 'AI Component Generation', 'AI Code Review'],
+    skills: ['Claude Code', 'Codex', 'Figma MCP Server (VS Code)', 'AI-Assisted Component Generation', 'Code Review & Refactoring Workflows'],
   },
   {
-    name: 'DevOps & Tooling',
-    skills: ['Git', 'Azure CI/CD', 'Ant Design', 'Async Collaboration'],
+    name: 'DevOps & Collaboration',
+    skills: ['Git', 'Azure CI/CD', 'Async Remote Collaboration', 'Cross-Timezone Communication'],
   },
 ]
 
