@@ -109,6 +109,10 @@ export type Project = {
   description: string
   tech: string[]
   highlights: string[]
+  links?: {
+    label: string
+    href: string
+  }[]
 }
 
 export const projects: Project[] = [
@@ -122,6 +126,11 @@ export const projects: Project[] = [
       'Implemented JWT authentication, Razorpay payment gateway, and email OTP verification for secure user access and financial transactions.',
       'Optimised MongoDB queries for product search and added WebSocket-based real-time communication for enhanced scalability.',
     ],
+    links: [
+      { label: 'GitHub', href: '' },
+      { label: 'Live app', href: '' },
+      { label: 'Demo', href: '' },
+    ],
   },
   {
     name: 'Salary Management System',
@@ -132,6 +141,11 @@ export const projects: Project[] = [
       'Built auto-reseed startup logic to make SQLite safe on Render\'s free tier, turning ephemeral storage into a predictable deployment pattern without changing databases unnecessarily.',
       'Implemented CRUD workflows plus aggregation-based reporting for currency-normalised payroll totals, department and country averages, and outlier detection across 10,000 employee records.',
       'Used test-driven, scoped AI-assisted development with isolated backend and frontend tests, no real network calls, and a disciplined commit history to keep the project maintainable and reviewable.',
+    ],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ejazAhamedShaik/ACME-Salary-Management-System' },
+      { label: 'Live app', href: 'https://salary-management-system-drab.vercel.app/' },
+      { label: 'Demo', href: 'https://youtu.be/G3muR_T2Oa8' },
     ],
     tech: ['React', 'Vite', 'TypeScript', 'Ant Design', 'TanStack Query', 'Node.js', 'Express', 'Drizzle ORM', 'SQLite', 'Zod', 'Vercel', 'Render'],
   }
