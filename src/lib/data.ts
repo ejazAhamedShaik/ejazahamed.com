@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'Ejaz Ahamed',
   title: 'Ejaz Ahamed — Full Stack Engineer',
   description:
-    'Full Stack Engineer with 4.7+ years of enterprise experience building scalable web products with React, Next.js, TypeScript, Node.js, and MongoDB.',
+    'Full Stack Engineer with 5 years of enterprise experience building scalable web products with React, Next.js, TypeScript, Node.js, and MongoDB.',
   url: 'https://ejaz-ahamed.dev',
   email: 'shaik.ejaz.dev@gmail.com',
   location: 'Bengaluru, India',
@@ -17,12 +17,12 @@ export const hero = {
   name: 'Ejaz Ahamed',
   headline: 'I build scalable web products and ship faster with AI-augmented workflows.',
   subheadline:
-    '4.7+ years of enterprise experience across React, Next.js, TypeScript, Node.js, and MongoDB.',
+    '5 years of enterprise experience across React, Next.js, TypeScript, Node.js, and MongoDB.',
 }
 
 export const about = {
   paragraphs: [
-    "I'm a Full Stack Engineer who has spent the last 4.7+ years building enterprise-grade web products — platforms that serve multi-region users, manage complex role-based access, and demand both performance and reliability.",
+    "I'm a Full Stack Engineer who has spent the last 5 years building enterprise-grade web products — platforms that serve multi-region users, manage complex role-based access, and demand both performance and reliability.",
     'What separates my workflow is how I use AI tooling. I\'ve integrated Claude Code, Codex, and the Figma MCP server into my daily engineering process, cutting design-to-development cycles by 35–45% without sacrificing code quality. I\'ve led frontend teams, mentored developers, and delivered from greenfield to production in distributed, async environments.',
     "I care deeply about ownership, clean architecture, and the user on the other side of the screen. I write code as if the next engineer — and the next user — matters.",
   ],
@@ -84,24 +84,24 @@ export type SkillCategory = {
 export const skills: SkillCategory[] = [
   {
     name: 'Frontend',
-    skills: ['React.js', 'Next.js (SSR/SSG)', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Ant Design', 'Redux', 'Zustand', 'Context API', 'WebSockets', 'Storybook', 'HTML5', 'CSS3'],
+    skills: ['React.js', 'Next.js (SSR/SSG)', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Ant Design', 'Redux', 'Zustand', 'HTML5', 'CSS3'],
   },
   {
     name: 'Backend',
-    skills: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL (basic)', 'JWT', 'MongoDB (working)', 'MySQL (working)', 'PostgreSQL (basic familiarity)'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT', 'MongoDB'],
   },
   {
-    name: 'Testing & Quality',
-    skills: ['Jest', 'React Testing Library', 'Unit Testing', 'Integration Testing', 'Component-level Test Baselines'],
+    name: 'Architecture & Quality',
+    skills: ['Component architecture', 'State management', 'Performance optimization', 'Jest', 'React Testing Library', 'Storybook'],
   },
-  {
-    name: 'AI Dev Tooling',
-    skills: ['Claude Code', 'Codex', 'Figma MCP Server (VS Code)', 'AI-Assisted Component Generation', 'Code Review & Refactoring Workflows'],
-  },
-  {
-    name: 'DevOps & Collaboration',
-    skills: ['Git', 'Azure CI/CD', 'Async Remote Collaboration', 'Cross-Timezone Communication'],
-  },
+  // {
+  //   name: 'AI Dev Tooling',
+  //   skills: ['Claude Code', 'Codex', 'Figma MCP Server (VS Code)', 'AI-Assisted Component Generation', 'Code Review & Refactoring Workflows'],
+  // },
+  // {
+  //   name: 'DevOps & Collaboration',
+  //   skills: ['Git', 'Azure CI/CD', 'Async Remote Collaboration', 'Cross-Timezone Communication'],
+  // },
 ]
 
 export type Project = {
@@ -123,6 +123,18 @@ export const projects: Project[] = [
       'Optimised MongoDB queries for product search and added WebSocket-based real-time communication for enhanced scalability.',
     ],
   },
+  {
+    name: 'Salary Management System',
+    description:
+      'An internal salary management platform for tracking employee records, payroll totals, and reporting across countries, built as a full-stack React and Node.js application with a focus on clean architecture and reliable deployment.',
+    highlights: [
+      'Designed the stack intentionally with React + Vite on the frontend and a hand-layered Express backend instead of defaults like Next.js or NestJS, keeping the architecture lightweight and well matched to an auth-gated internal tool.',
+      'Built auto-reseed startup logic to make SQLite safe on Render\'s free tier, turning ephemeral storage into a predictable deployment pattern without changing databases unnecessarily.',
+      'Implemented CRUD workflows plus aggregation-based reporting for currency-normalised payroll totals, department and country averages, and outlier detection across 10,000 employee records.',
+      'Used test-driven, scoped AI-assisted development with isolated backend and frontend tests, no real network calls, and a disciplined commit history to keep the project maintainable and reviewable.',
+    ],
+    tech: ['React', 'Vite', 'TypeScript', 'Ant Design', 'TanStack Query', 'Node.js', 'Express', 'Drizzle ORM', 'SQLite', 'Zod', 'Vercel', 'Render'],
+  }
 ]
 
 export type EducationItem = {
