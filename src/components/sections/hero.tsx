@@ -73,6 +73,12 @@ export function Hero() {
             >
               View my work
             </a>
+            <a href="/resume-fullstack.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-edge text-ink-dim text-sm font-medium hover:text-ink hover:border-violet/40 transition-colors duration-200">
+              Full Stack résumé <span aria-hidden>↗</span>
+            </a>
+            <a href="/resume-frontend.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-edge text-ink-dim text-sm font-medium hover:text-ink hover:border-violet/40 transition-colors duration-200">
+              Frontend résumé <span aria-hidden>↗</span>
+            </a>
           </div>
         </AnimItem>
 

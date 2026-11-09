@@ -53,7 +53,7 @@ export function Experience() {
                   {/* Highlights */}
                   <ul className="space-y-3" role="list">
                     {job.highlights.map((h, j) => (
-                      <li key={j} className="flex gap-3 text-sm text-ink-dim leading-relaxed">
+                      <li key={j} className="flex gap-3 text-[15px] text-ink-dim leading-7">
                         <span className="text-violet flex-shrink-0 mt-0.5 text-xs">▸</span>
                         {h}
                       </li>

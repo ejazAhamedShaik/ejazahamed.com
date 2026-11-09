@@ -35,7 +35,7 @@ export function Projects() {
       <div className="grid md:grid-cols-2 gap-5">
         {projects.map((project, i) => (
           <FadeIn key={project.name} delay={i * 0.1}>
-            <article className="p-6 md:p-8 rounded-2xl border border-edge bg-surface hover:border-violet/20 transition-colors duration-300 h-full max-h-[31rem] flex flex-col">
+            <article className="p-6 md:p-8 rounded-2xl border border-edge bg-surface hover:border-violet/20 transition-colors duration-300 h-full flex flex-col">
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h3 className="text-lg font-semibold text-ink">{project.name}</h3>
@@ -56,7 +56,7 @@ export function Projects() {
 
               <p className="text-sm text-ink-dim leading-relaxed mb-5">{project.description}</p>
 
-              <ul className="space-y-2 mb-3 max-h-36 overflow-hidden relative" role="list">
+              <ul className="space-y-2 mb-3" role="list">
                 {project.highlights.map((h, j) => (
                   <li key={j} className="flex gap-2.5 text-sm text-ink-dim leading-relaxed">
                     <span className="text-violet flex-shrink-0 mt-0.5 text-xs">▸</span>
@@ -65,8 +65,8 @@ export function Projects() {
                 ))}
               </ul>
 
-              <button type="button" onClick={() => setSelectedProject(project)} className="self-start text-sm font-medium text-violet-light hover:text-ink transition-colors mb-5">
-                Read more <span aria-hidden>↗</span>
+              <button type="button" onClick={() => setSelectedProject(project)} className="self-start mt-auto pt-4 text-sm font-medium text-violet-light hover:text-ink transition-colors">
+                Project details <span aria-hidden>↗</span>
               </button>
 
             </article>

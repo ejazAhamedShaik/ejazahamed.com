@@ -14,7 +14,7 @@ export function About() {
         <div className="space-y-5">
           {about.paragraphs.map((p, i) => (
             <FadeIn key={i} delay={i * 0.1}>
-              <p className="text-ink-dim text-base md:text-lg leading-relaxed">{p}</p>
+              <p className="text-ink-dim text-base md:text-lg leading-8">{p}</p>
             </FadeIn>
           ))}
         </div>

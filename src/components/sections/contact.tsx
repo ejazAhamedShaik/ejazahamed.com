@@ -18,7 +18,7 @@ const links = [
   },
   {
     label: 'GitHub',
-    value: 'github.com/ejaz-ahamed',
+    value: 'github.com/ejazAhamedShaik',
     href: siteConfig.github,
     description: 'Open source & projects',
     external: true,

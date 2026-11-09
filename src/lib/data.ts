@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'Ejaz Ahamed',
   title: 'Ejaz Ahamed — Full Stack Engineer',
   description:
-    'Full Stack Engineer with 5 years of enterprise experience building scalable web products with React, Next.js, TypeScript, Node.js, and MongoDB.',
+    'Full Stack Engineer with 4.7+ years of enterprise experience building scalable web products with React, Next.js, TypeScript, Node.js, and MongoDB.',
   url: 'https://ejaz-ahamed.dev',
   email: 'shaik.ejaz.dev@gmail.com',
   location: 'Bengaluru, India',
@@ -15,24 +15,24 @@ export const siteConfig = {
 export const hero = {
   label: 'Full Stack Engineer',
   name: 'Ejaz Ahamed',
-  headline: 'I build scalable web products and ship faster with AI-augmented workflows.',
+  headline: 'Full stack engineer building scalable products with thoughtful frontend craft.',
   subheadline:
-    '5 years of enterprise experience across React, Next.js, TypeScript, Node.js, and MongoDB.',
+    '4.7+ years building enterprise products with React, Next.js, TypeScript, Node.js, and MongoDB. I use AI-assisted workflows to cut design-to-development time by 35–45%.',
 }
 
 export const about = {
   paragraphs: [
-    "I'm a Full Stack Engineer who has spent the last 5 years building enterprise-grade web products — platforms that serve multi-region users, manage complex role-based access, and demand both performance and reliability.",
-    'What separates my workflow is how I use AI tooling. I\'ve integrated Claude Code, Codex, and the Figma MCP server into my daily engineering process, cutting design-to-development cycles by 35–45% without sacrificing code quality. I\'ve led frontend teams, mentored developers, and delivered from greenfield to production in distributed, async environments.',
+    "I'm a Full Stack Engineer with 4.7+ years of enterprise experience building products for multi-region users, with complex role-based access and high expectations for performance and reliability.",
+    'I integrate Claude Code, Codex, and the Figma MCP server into design-to-development workflows, reducing cycle time by 35–45% while maintaining enterprise code quality. I have led frontend delivery, mentored developers, and shipped from planning through production in distributed teams.',
     "I care deeply about ownership, clean architecture, and the user on the other side of the screen. I write code as if the next engineer — and the next user — matters.",
   ],
   traits: [
     'Product-minded',
     'Enterprise experience',
     'Remote-native',
-    'AI-augmented workflows',
+    'AI-assisted development',
     'Cross-timezone collaboration',
-    'Frontend leadership',
+    'Mentoring & code reviews',
   ],
 }
 
@@ -94,14 +94,14 @@ export const skills: SkillCategory[] = [
     name: 'Architecture & Quality',
     skills: ['Component architecture', 'State management', 'Performance optimization', 'Jest', 'React Testing Library', 'Storybook'],
   },
-  // {
-  //   name: 'AI Dev Tooling',
-  //   skills: ['Claude Code', 'Codex', 'Figma MCP Server (VS Code)', 'AI-Assisted Component Generation', 'Code Review & Refactoring Workflows'],
-  // },
-  // {
-  //   name: 'DevOps & Collaboration',
-  //   skills: ['Git', 'Azure CI/CD', 'Async Remote Collaboration', 'Cross-Timezone Communication'],
-  // },
+  {
+    name: 'AI-assisted development',
+    skills: ['Claude Code', 'Codex', 'Figma MCP server', 'Component generation', 'Code review workflows'],
+  },
+  {
+    name: 'Testing & delivery',
+    skills: ['Jest', 'React Testing Library', 'Storybook', 'Azure CI/CD', 'Git'],
+  },
 ]
 
 export type Project = {
@@ -119,35 +119,33 @@ export const projects: Project[] = [
   {
     name: 'E-Commerce Full Stack App',
     description:
-      'A production-grade MERN e-commerce platform with secure authentication, real-time capabilities, and a complete payment integration.',
+      'A MERN e-commerce platform focused on secure checkout, responsive product search, and real-time customer communication.',
     tech: ['Node.js', 'Express', 'MongoDB', 'React', 'WebSockets', 'JWT', 'Razorpay'],
     highlights: [
-      'Architected with MVC and factory patterns — improving code organisation and development efficiency by ~20%.',
-      'Implemented JWT authentication, Razorpay payment gateway, and email OTP verification for secure user access and financial transactions.',
-      'Optimised MongoDB queries for product search and added WebSocket-based real-time communication for enhanced scalability.',
+      'Applied MVC and factory patterns to improve code organization and development efficiency by ~20%.',
+      'Added JWT authentication, Razorpay payments, and email OTP verification for account and transaction security.',
+      'Optimized MongoDB product-search queries and added WebSocket communication for responsive customer interactions.',
     ],
     links: [
-      { label: 'GitHub', href: '' },
-      { label: 'Live app', href: '' },
-      { label: 'Demo', href: '' },
+      { label: 'GitHub', href: 'https://github.com/ejazAhamedShaik' },
     ],
   },
   {
     name: 'Salary Management System',
     description:
-      'An internal salary management platform for tracking employee records, payroll totals, and reporting across countries, built as a full-stack React and Node.js application with a focus on clean architecture and reliable deployment.',
+      'A full-stack payroll and employee reporting tool with country-aware totals, department insights, and outlier detection across 10,000 employee records.',
     highlights: [
-      'Designed the stack intentionally with React + Vite on the frontend and a hand-layered Express backend instead of defaults like Next.js or NestJS, keeping the architecture lightweight and well matched to an auth-gated internal tool.',
-      'Built auto-reseed startup logic to make SQLite safe on Render\'s free tier, turning ephemeral storage into a predictable deployment pattern without changing databases unnecessarily.',
-      'Implemented CRUD workflows plus aggregation-based reporting for currency-normalised payroll totals, department and country averages, and outlier detection across 10,000 employee records.',
-      'Used test-driven, scoped AI-assisted development with isolated backend and frontend tests, no real network calls, and a disciplined commit history to keep the project maintainable and reviewable.',
+      'Built employee CRUD workflows and aggregation-based reports for currency-normalized payroll totals and country and department averages.',
+      'Designed a focused React + Vite frontend and layered Express API for an authenticated internal tool.',
+      'Added SQLite auto-reseed startup logic to keep deployments predictable on ephemeral storage.',
+      'Kept changes reviewable with isolated frontend and backend tests and scoped AI-assisted development.',
     ],
     links: [
       { label: 'GitHub', href: 'https://github.com/ejazAhamedShaik/ACME-Salary-Management-System' },
       { label: 'Live app', href: 'https://salary-management-system-drab.vercel.app/' },
       { label: 'Demo', href: 'https://youtu.be/G3muR_T2Oa8' },
     ],
-    tech: ['React', 'Vite', 'TypeScript', 'Ant Design', 'TanStack Query', 'Node.js', 'Express', 'Drizzle ORM', 'SQLite', 'Zod', 'Vercel', 'Render'],
+    tech: ['React', 'Vite', 'TypeScript', 'Ant Design', 'TanStack Query', 'Node.js', 'Express', 'Drizzle ORM', 'SQLite', 'Zod'],
   }
 ]
 
@@ -170,11 +168,6 @@ export const education: EducationItem[] = [
       'High-Level Design',
       'Full-Stack Capstone Project',
     ],
-  },
-  {
-    degree: 'Bachelor of Technology (B.Tech)',
-    institution: 'JNTU Anantapur',
-    period: '2017 – 2021',
   },
 ]
 
